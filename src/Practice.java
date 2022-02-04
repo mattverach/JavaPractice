@@ -4,6 +4,7 @@ public class Practice {
     public static void main(String[] args) {
 
 /*
+
         1. Write a Java program to print 'Hello' on screen and then print your name on a separate line.
         System.out.println("Hello");
         System.out.println("Matías Vera");
@@ -299,10 +300,67 @@ public class Practice {
         }
             return suma;
 
+        34. Write a Java program to compute the area of a hexagon
+        Scanner in = new Scanner(System.in);
+        System.out.println("Ingrese longitud de un lado: ");
+        double s = in.nextDouble();
+
+        System.out.println((6*Math.pow(s,2)/(4*Math.tan(Math.PI/6))));
+
+        35. Write a Java program to compute the area of a polygon.
+
+
+        Scanner in = new Scanner(System.in);
+        System.out.println("Ingrese numero de lados del poligono: ");
+        int n = in.nextInt();
+
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Ingrese longitud de un lado del poligono: ");
+        double s = sc.nextDouble();
+
+        System.out.println((n*Math.pow(s,2)/(4*Math.tan(Math.PI/n))));
+
+        36. Write a Java program to compute the distance between two points on the surface of earth.
+        37. Write a Java program to reverse a string.
+
+
+
+        Scanner in = new Scanner(System.in);
+        System.out.println("Ingrese un String: ");
+        char[] x = in.nextLine().toCharArray();
+
+        //la funcion length empieza a contar en 1, mientras que el array empieza en 0
+        for (int i = x.length - 1 ; i>=0; i--) {
+            System.out.print(x[i]);
+        }
+
+    38. Write a Java program to count the letters, spaces, numbers and other characters of an input string.
+
+        Scanner in = new Scanner(System.in);
+        System.out.println("Ingrese su String");
+        char[] x = in.nextLine().toCharArray();
+
+        int letter = 0, space = 0, number = 0, other = 0;
+
+        for (int i = 0; i< x.length; i++) {
+            if (Character.isLetter(x[i])) {
+                letter++;
+            } else if (Character.isDigit(x[i])) {
+                number++;
+            } else if (Character.isSpaceChar(x[i])) {
+                space++;
+            } else {
+                other++;
+            }
+
+
+
+        }
+        System.out.println("Letras: " + letter);
+        System.out.println("Espacios: " + space);
+        System.out.println("Numeros: " + number);
+        System.out.println("Otros: " + other);
 */
-
-
-
 
 
 
@@ -319,10 +377,3 @@ public class Practice {
 
         }
 }
-
-
-
-
-
-
-
