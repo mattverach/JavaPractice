@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class Practice {
     public static void main(String[] args) {
 
-        /*
+/*
         1. Write a Java program to print 'Hello' on screen and then print your name on a separate line.
         System.out.println("Hello");
         System.out.println("Matías Vera");
@@ -254,7 +254,7 @@ public class Practice {
 
         32. Write a Java program to compare two numbers.
 
-        */
+
         Scanner in = new Scanner(System.in);
         System.out.println("Ingrese el primer número: ");
         int num1 = in.nextInt();
@@ -280,6 +280,26 @@ public class Practice {
             System.out.printf( "%d <= %d\n", num1, num2 );
         }
 
+        33. Write a Java program and compute the sum of the digits of an integer
+
+
+        Scanner in = new Scanner(System.in);
+        System.out.println("Ingrese un número de 2 o mas cifras: ");
+        int num = in.nextInt();
+        System.out.println("La suma de las cifras es: " + sumarCifras(num));
+
+    }
+
+        public static int sumarCifras(int num) {
+            int suma = 0;
+            while (num != 0) {
+                suma += num % 10;
+                num /= 10;
+
+        }
+            return suma;
+
+*/
 
 
 
